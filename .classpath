@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="JBTCore/src"/>
+	<classpathentry kind="src" path="JBTEditor/jbt.tools.bteditor/src"/>
+	<classpathentry kind="lib" path="JBTCore/libs/jargs.jar"/>
+	<classpathentry kind="lib" path="JBTCore/libs/jdom.jar"/>
+	<classpathentry kind="lib" path="JBTCore/libs/mmpm.jar"/>
+	<classpathentry kind="lib" path="JBTCore/libs/sourceformatter.jar"/>
+	<classpathentry kind="lib" path="JBTEditor/jbt.tools.bteditor/libs/jdom.jar"/>
+	<classpathentry kind="lib" path="JBTEditor/jbt.tools.bteditor/libs/mmpm.jar"/>
+	<classpathentry kind="output" path="JBTCore/bin"/>
+</classpath>

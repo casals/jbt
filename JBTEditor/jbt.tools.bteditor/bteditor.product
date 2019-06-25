@@ -22,8 +22,10 @@ Icons: iconspedia (http://www.iconspedia.com/) and icons at Wikimedia Commons (h
    </configIni>
 
    <launcherArgs>
-      <vmArgs>-Xmx1024M</vmArgs>
-      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+      <vmArgs>-Xmx1024M
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
    </launcherArgs>
 
    <windowImages i16="/jbt.tools.bteditor/icons/jbt16.png" i32="/jbt.tools.bteditor/icons/jbt32.png" i48="/jbt.tools.bteditor/icons/jbt48.png" i64="/jbt.tools.bteditor/icons/jbt64.png" i128="/jbt.tools.bteditor/icons/jbt128.png"/>
@@ -31,7 +33,6 @@ Icons: iconspedia (http://www.iconspedia.com/) and icons at Wikimedia Commons (h
    <launcher name="JBTEditor">
       <linux icon="/jbt.tools.bteditor/icons/jbt.xpm"/>
       <macosx icon="/jbt.tools.bteditor/icons/jbt.icns"/>
-      <solaris/>
       <win useIco="true">
          <ico path="/jbt.tools.bteditor/icons/jbt.ico"/>
          <bmp/>
@@ -72,11 +73,18 @@ Icons: iconspedia (http://www.iconspedia.com/) and icons at Wikimedia Commons (h
 
    <features>
       <feature id="jbt.tools.bteditor.feature" version="0.0.1"/>
+      <feature id="org.eclipse.emf.ecore"/>
+      <feature id="org.eclipse.rcp"/>
+      <feature id="org.eclipse.emf.common"/>
+      <feature id="org.eclipse.e4.rcp"/>
    </features>
 
    <configurations>
+      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.osgi" autoStart="true" startLevel="-1" />
    </configurations>
 
